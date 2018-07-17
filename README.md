@@ -5,6 +5,10 @@ This application uses [OkHttp](http://square.github.io/okhttp/), an HTTP & HTTP/
 
 This application includes a splash screen (Feel free to add your logo or remove it completely) and a navigation drawer.
 
+# Notice
+
+The application is not complete yet, I will be making updates to the code to make the app is completed.
+
 # Setup
 
 The application is straightforward to setup.  
@@ -24,10 +28,6 @@ Screenshots are posted here:
 
 ![imageedit_1_5585713203](https://user-images.githubusercontent.com/36175538/42836520-e253c066-89c0-11e8-9518-344bb70efa36.png)
 
-# Notice
-
-The application is not complete yet, I will be making updates to the code to make the app is completed.
-
 # Updates
 
-I will be including what I updated in the code, as well as the date it was updated on.
+I will be including what I updated in the code, as well as the date it was updated on in this section.
