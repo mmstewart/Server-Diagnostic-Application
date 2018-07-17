@@ -45,8 +45,6 @@ Screenshots will be updated when there are changes to the design.
 
 ---
 
-Screenshots are posted here:  
-
 ![imageedit_2_2117761380](https://user-images.githubusercontent.com/36175538/42836482-c69942ec-89c0-11e8-8822-745c391661ed.png)  
 
 ![imageedit_1_5367105670](https://user-images.githubusercontent.com/36175538/42836513-dd365490-89c0-11e8-9779-da377539ee7d.png)  
