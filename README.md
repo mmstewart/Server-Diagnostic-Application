@@ -28,6 +28,16 @@ Screenshots are posted here:
 
 ![imageedit_1_5585713203](https://user-images.githubusercontent.com/36175538/42836520-e253c066-89c0-11e8-9518-344bb70efa36.png)
 
+## Author
+
+* **Marcus Stewart** - *Initial work* - [MMStewart](https://github.com/mmstewart)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
+
 # Updates
 
 I will be including what I updated in the code, as well as the date it was updated on in this section.
