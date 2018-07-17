@@ -25,8 +25,8 @@ Second, you are able to add your url, with the ability to add optional headers, 
 ```
 var request : Request = Request.Builder()
         .url("url_here")
-        .
-        .
+        .header("Authorization", Credentials.basic("a_username","a_password")
+        .cacheControl(CacheControl.FORCE_NETWORK)
 ```
 
 Last, add the build to the end of your calls and run the program.
@@ -34,8 +34,8 @@ Last, add the build to the end of your calls and run the program.
 ```
 var request : Request = Request.Builder()
         .url("url_here")
-        .
-        .
+        .header("Authorization", Credentials.basic("a_username","a_password")
+        .cacheControl(CacheControl.FORCE_NETWORK)
         .build()
 ```
 
