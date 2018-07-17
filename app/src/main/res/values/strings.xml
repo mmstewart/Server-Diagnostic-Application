@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">serverApp</string>
+    <string name="equuspicture">equusPicture</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="welcome_to_your_server">Welcome to your Server</string>
+    <string name="diagnose">Diagnose</string>
+    <string name="server_diagnostic_report">Server Diagnostic Report</string>
+    <string name="results_appear_here">Results Appear Here</string>
+    <string name="results">Results</string>
+    <string name="authentication_optional">Authentication (Optional)</string>
+    <string name="authentication">Authentication:</string>
+    <string name="ip_address">IP Address:</string>
+    <string name="token_optional">Token (Optional)</string>
+    <string name="submit">Submit</string>
+    <string name="clear">Clear</string>
+</resources>
