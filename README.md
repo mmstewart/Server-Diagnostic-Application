@@ -36,7 +36,7 @@ Screenshots are posted here:
 
 * **Marcus Stewart** - *Initial work* - [MMStewart](https://github.com/mmstewart)
 
-### License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
