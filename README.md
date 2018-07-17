@@ -10,14 +10,33 @@ The application is not complete yet, I will be making updates to the code to mak
 
 ## Setup
 
-A step by step series of examples that tell you how to get a development env running   
+A step by step series of examples that tell you how to get the application running.
 
 ---
 
-In the webService() method in the ServerReportScreen class, you are able to request what
+First, the main change that you have to make is in the webService() method. To find the webservice() method, it is located at the bottom of the ServerReportScreen class. You are able to request what you need with the request builder.
 
 ```
-Give the example
+var request : Request = Request.Builder()
+```
+
+Second, you are able to add your url, with the ability to add optional headers, post, get, delete, etc. with the request build.
+
+```
+var request : Request = Request.Builder()
+        .url("url_here")
+        .
+        .
+```
+
+Last, add the build to the end of your calls and run the program.
+
+```
+var request : Request = Request.Builder()
+        .url("url_here")
+        .
+        .
+        .build()
 ```
 
 ## Screenshots
