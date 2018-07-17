@@ -1,4 +1,4 @@
-# Server-Diagnostic-Application
+# Server Diagnostic Application
 
 This application diagnoses computer servers, converting JSON files to string.  
 
