@@ -1,7 +1,6 @@
 # Server-Diagnostic-Application
 
 This application diagnoses computer servers, converting JSON files to string.  
-This application uses [OkHttp](http://square.github.io/okhttp/), an HTTP & HTTP/2 client for Android and Java.
 
 This application includes a splash screen (Feel free to add your logo or remove it completely) and a navigation drawer.
 
@@ -28,6 +27,10 @@ Screenshots are posted here:
 
 ![imageedit_1_5585713203](https://user-images.githubusercontent.com/36175538/42836520-e253c066-89c0-11e8-9518-344bb70efa36.png)
 
+## Built With
+
+* [OkHttp](http://square.github.io/okhttp/) - An HTTP & HTTP/2 client for Android and Java
+
 ## Author
 
 * **Marcus Stewart** - *Initial work* - [MMStewart](https://github.com/mmstewart)
@@ -35,8 +38,6 @@ Screenshots are posted here:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-
 
 # Updates
 
