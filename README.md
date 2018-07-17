@@ -17,6 +17,7 @@ In the webService() method,
 ## Screenshots
 
 Screenshots will be updated when there are changes to the design.  
+
 Screenshots are posted here:  
 
 ![imageedit_2_2117761380](https://user-images.githubusercontent.com/36175538/42836482-c69942ec-89c0-11e8-8822-745c391661ed.png)  
@@ -41,4 +42,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ### Updates
 
-I will be including what I updated in the code, as well as the date it was updated on in this section.
+I will be including what I updated in the code, as well as the date it was updated on, in this section.
