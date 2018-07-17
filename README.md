@@ -40,6 +40,13 @@ Screenshots are posted here:
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
+## Acknowledgments
+
+* [Equus](https://www.equuscs.com/)
+* [Navigation Drawer](https://www.youtube.com/watch?v=AS92bq3XxkA)
+* [Splash Screen](https://www.youtube.com/watch?v=jXtof6OUtcE&t=137s)
+
 ### Updates
 
 I will be including what I updated in the code, as well as the date it was updated on, in this section.
+
