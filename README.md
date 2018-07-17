@@ -8,13 +8,13 @@ This application includes a splash screen (Feel free to add your logo or remove 
 
 The application is not complete yet, I will be making updates to the code to make the app is completed.
 
-# Setup
+## Setup
 
 The application is straightforward to setup.  
 
 In the webService() method, 
 
-# Screenshots
+## Screenshots
 
 Screenshots will be updated when there are changes to the design.  
 Screenshots are posted here:  
@@ -35,10 +35,10 @@ Screenshots are posted here:
 
 * **Marcus Stewart** - *Initial work* - [MMStewart](https://github.com/mmstewart)
 
-## License
+### License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-# Updates
+### Updates
 
 I will be including what I updated in the code, as well as the date it was updated on in this section.
