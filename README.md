@@ -10,13 +10,21 @@ The application is not complete yet, I will be making updates to the code to mak
 
 ## Setup
 
-The application is straightforward to setup.  
+A step by step series of examples that tell you how to get a development env running   
 
-In the webService() method, 
+---
+
+In the webService() method in the ServerReportScreen class, you are able to request what
+
+```
+Give the example
+```
 
 ## Screenshots
 
 Screenshots will be updated when there are changes to the design.  
+
+---
 
 Screenshots are posted here:  
 
@@ -49,4 +57,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ### Updates
 
 I will be including what I updated in the code, as well as the date it was updated on, in this section.
-
