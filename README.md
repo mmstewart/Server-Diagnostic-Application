@@ -11,6 +11,10 @@ The application is straightforward to setup.
 
 In the webService() method, 
 
+# Screenshots
+
+To be included soon.
+
 # Notice
 
 The application is not complete yet, I will be making updates to the code to make the app is completed.
@@ -19,6 +23,4 @@ The application is not complete yet, I will be making updates to the code to mak
 
 I will be including what I updated in the code, as well as the date it was updated on.
 
-# Screenshots
 
-To be included soon.
