@@ -39,6 +39,8 @@ var request : Request = Request.Builder()
         .build()
 ```
 
+**Feel free to add your own calls, as the only two calls you need to run are url and build**
+
 ## Screenshots
 
 Screenshots will be updated when there are changes to the design.  
