@@ -31,5 +31,3 @@ The application is not complete yet, I will be making updates to the code to mak
 # Updates
 
 I will be including what I updated in the code, as well as the date it was updated on.
-
-
