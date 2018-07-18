@@ -2,11 +2,11 @@
 
 This application diagnoses computer servers, converting JSON files to string.  
 
-This application includes a splash screen (Feel free to add your logo or remove it completely) and a navigation drawer.
-
 # Notice
 
-The application is not complete yet, I will be making updates to the code to make the app is completed.
+The application is not complete yet, I will be making updates to the code to make the app is completed.  
+
+This application includes a splash screen (Feel free to add your logo or remove it completely) and a navigation drawer.
 
 ## Setup
 
