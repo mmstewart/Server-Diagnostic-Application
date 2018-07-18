@@ -1,5 +1,5 @@
 ![Created](https://img.shields.io/badge/created-july%202018-brightgreen.svg)
-[![Contributor](https://img.shields.io/github/contributors/moroshko/autosuggest-highlight.svg?style=flat-square)](https://github.com/mmstewart/Server-Diagnostic-Application/graphs/contributors)
+[![Contributors](https://img.shields.io/badge/contributors-1-lightgrey.svg)](https://github.com/mmstewart/Server-Diagnostic-Application/graphs/contributors)
 [![License](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/mmstewart/Server-Diagnostic-Application/blob/master/LICENSE.md)
 ![Updated](https://img.shields.io/badge/updated-july%202018-yellow.svg)
 
