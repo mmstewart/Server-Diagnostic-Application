@@ -38,8 +38,9 @@ open class ServerReportScreen : Fragment() {
         }
 
         //Hides keyboard on touch outside of EditText
-        rL.setOnClickListener {
-            hideKeyboard()
+        rL.setOnTouchListener { view, motionEvent ->
+            rL.hideKeyboard(view)
+            false
         }
 
         //Clear Button
