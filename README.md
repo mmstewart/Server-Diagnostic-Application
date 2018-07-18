@@ -1,4 +1,4 @@
-[![Contributor](https://img.shields.io/github/contributors/moroshko/autosuggest-highlight.svg?style=flat-square)](https://github.com/mmstewart/Server-Diagnostic-Application/graphs/contributors)
+[![Contributor](https://img.shields.io/badge/contributors-1-blue.svg)](https://github.com/mmstewart/Server-Diagnostic-Application/graphs/contributors)
 [![License](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/mmstewart/Server-Diagnostic-Application/blob/master/LICENSE.md)
 
 
