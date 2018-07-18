@@ -55,20 +55,10 @@ open class ServerReportScreen : Fragment() {
         return view
     }
 
-
-    //Method that hides the keyboard on touch outside of EditText. Corresponds to the Android Device version.
-    private fun hideKeyboard() {
-        val view = activity!!.currentFocus
-        val imm : InputMethodManager = context!!.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
-        if(android.os.Build.VERSION.SDK_INT >= 26) {
-            view.post {
-                imm.hideSoftInputFromWindow(view.windowToken, 0)
-            }
-        } else {
-            if(view != null) {
-                imm.hideSoftInputFromWindow(view.windowToken, 0)
-            }
-        }
+    //Method that hides the keyboard on touch outside of EditText.
+    private fun View.hideKeyboard(view : View) {
+        val imm : InputMethodManager = context.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(view.windowToken, InputMethodManager.HIDE_NOT_ALWAYS)
     }
 
     //Method downloads a URL and prints the JSON file into a string
