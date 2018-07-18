@@ -28,11 +28,11 @@ First, the main change that you have to make is in the webService() method. To f
 
 Second, you are able to add your url, with the ability to add optional headers, post, get, delete, etc. with the request build.
 
-```
+```diff
 var request : Request = Request.Builder()
-         .url("url_here")
-         .header("Authorization", Credentials.basic("a_username","a_password")
-         .cacheControl(CacheControl.FORCE_NETWORK)
++        .url("url_here")
++        .header("Authorization", Credentials.basic("a_username","a_password")
++        .cacheControl(CacheControl.FORCE_NETWORK)
 ```
 
 Last, add the build to the end of your calls and run the program.
@@ -42,7 +42,7 @@ var request : Request = Request.Builder()
         .url("url_here")
         .header("Authorization", Credentials.basic("a_username","a_password")
         .cacheControl(CacheControl.FORCE_NETWORK)
-        .build()
++       .build()
 ```
 
 **Feel free to add your own calls, as the only two calls you need to run are url and build**
