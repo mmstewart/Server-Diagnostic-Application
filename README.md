@@ -76,7 +76,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * [Equus](https://www.equuscs.com/)
 * [Navigation Drawer](https://www.youtube.com/watch?v=AS92bq3XxkA)
 * [Splash Screen](https://www.youtube.com/watch?v=jXtof6OUtcE&t=137s)
+* [Shields](https://shields.io/)
 
-## Update
+### Updates
 
 **7/18/2018** - Keyboard error fix
