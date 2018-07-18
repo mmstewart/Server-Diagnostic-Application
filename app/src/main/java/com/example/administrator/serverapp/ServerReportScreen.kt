@@ -65,7 +65,7 @@ then have a line where the user can enter their ip address and submit using the 
     private fun webService() {
         val textResult : TextView = view!!.findViewById(R.id.textView2)
         val client = OkHttpClient()
-        var textURL = "https://reqres.in/api/users?page=2"
+        var textURL = "https://reqres.in/api/users?page=2" //Feel free to change URL
 
         //Hides keyboard on submit
         val i : InputMethodManager = activity!!.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
