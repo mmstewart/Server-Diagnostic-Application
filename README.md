@@ -37,7 +37,7 @@ var request : Request = Request.Builder()
 
 Last, add the build to the end of your calls and run the program.
 
-```
+```diff
 var request : Request = Request.Builder()
         .url("url_here")
         .header("Authorization", Credentials.basic("a_username","a_password")
