@@ -1,3 +1,5 @@
+[![Contributors](https://img.shields.io/github/contributors/moroshko/autosuggest-highlight.svg?style=flat-square)](https://github.com/mmstewart/Server-Diagnostic-Application/graphs/contributors)
+
 # Server Diagnostic Application
 
 This application diagnoses computer servers, converting JSON files to string.  
