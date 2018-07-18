@@ -41,7 +41,7 @@ then have a line where the user can enter their ip address and submit using the 
         //Hides keyboard on touch outside of EditText
         rL.setOnTouchListener { view, motionEvent ->
             rL.hideKeyboard(view)
-            false
+            return@setOnTouchListener false
         }
 
         //Clear Button
