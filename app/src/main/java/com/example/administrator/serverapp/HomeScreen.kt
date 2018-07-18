@@ -41,7 +41,7 @@ class HomeScreen : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
         toggle.syncState()
         supportActionBar!!.setDisplayHomeAsUpEnabled(true) //Adds menu icon
 
-        nav_view1.setNavigationItemSelectedListener(this)
+        nav_view1.setNavigationItemSelectedListener(this) //The navigation view will be notified when a menu item is selected
 
         //Fade in/zoom in animation of 'Welcome to your Server' text
         val myText : TextView = findViewById(R.id.textView)
