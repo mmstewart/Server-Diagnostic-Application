@@ -25,6 +25,8 @@ class HomeScreen : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_screen)
+        
+        //Sets Home screen title of action bar to "Home"
         supportActionBar!!.title = "Home"
 
         drawer = findViewById(R.id.drawer1)
@@ -74,13 +76,14 @@ class HomeScreen : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
                 .commit()
     }
 
+    //Called when item in the navigation meu is selected
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         navScreen(item.itemId)
         drawer.closeDrawer(GravityCompat.START)
         return true
     }
 
-    //Allows user to select menu icon
+    //Used whenever item in the navigation menu is selected
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (toggle.onOptionsItemSelected(item)) {
             return true
@@ -92,6 +95,8 @@ class HomeScreen : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
 //Fragment Class of Home (Allows user to press on the navigation drawer tabs)
 class HomeFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        
+        //After the navigation drawer is used, the title of the action bar is maintained to say "Home"
         (activity as AppCompatActivity).supportActionBar!!.title = "Home"
 
         return LayoutInflater.from(container?.context).inflate(
