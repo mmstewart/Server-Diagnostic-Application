@@ -9,7 +9,7 @@ import android.os.Handler
 import android.view.View
 
 class SplashScreen : AppCompatActivity() {
-    private val SPLASH_TIME_OUT = 4000 //Splash screen duration of 4 seconds
+    private val SPLASH_TIME_OUT = 4000 //Splash screen duration of 4 seconds.Feel free to change time duration.
     private var firstTime: Boolean = false
     private lateinit var sharedPreferences: SharedPreferences
 
@@ -47,8 +47,8 @@ class SplashScreen : AppCompatActivity() {
         }
     }
 
-    //Splash screen is fullscreen, with no navigation bar/status bar,
-    // and you can't press the screen to access the navigation bar
+    /* Splash screen is fullscreen, with no navigation bar/status bar,
+    and you can't press the screen to access the navigation bar */
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
         if(hasFocus) {
