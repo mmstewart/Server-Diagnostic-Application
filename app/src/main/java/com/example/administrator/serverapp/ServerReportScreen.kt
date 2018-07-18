@@ -18,8 +18,8 @@ import okhttp3.*
 import java.io.IOException
 
 open class ServerReportScreen : Fragment() {
-//Use OkHttp or Retrofit to access the network server, comes out as a JSON text. Test using a button first
-//then have a line where the user can enter their ip address and submit using the button.
+/* Use OkHttp or Retrofit to access the network server, comes out as a JSON text. Test using a button first
+then have a line where the user can enter their ip address and submit using the button. */
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view : View = inflater.inflate(R.layout.activity_server_report_screen, container,false)
@@ -67,10 +67,11 @@ open class ServerReportScreen : Fragment() {
         val client = OkHttpClient()
         var textURL = "https://reqres.in/api/users?page=2"
 
-        //hides keyboard on submit
+        //Hides keyboard on submit
         val i : InputMethodManager = activity!!.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         i.hideSoftInputFromWindow(activity!!.currentFocus.windowToken, 0)
-
+        
+        //Feel free to edit here
         val request : Request = Request.Builder()
                 .url(textURL)
                 .build()
