@@ -27,8 +27,6 @@ then have a line where the user can enter their ip address and submit using the 
         val button : Button = view.findViewById(R.id.button1)
         val button2 : Button = view.findViewById(R.id.button3)
         val textResult : TextView = view.findViewById(R.id.textView2)
-        val ipText : EditText = view.findViewById(R.id.editText)
-        val authenticationText : EditText = view.findViewById(R.id.editText2)
         val rL : RelativeLayout = view.findViewById(R.id.relative_layout)
 
         (activity as AppCompatActivity).supportActionBar!!.title = "Server Diagnostic Report"
@@ -47,10 +45,6 @@ then have a line where the user can enter their ip address and submit using the 
         //Clear Button
         button2.setOnClickListener {
             textResult.text = "Results"
-            ipText.hint = "IP Address"
-            ipText.setText("")
-            authenticationText.hint = "Token (Optional)"
-            authenticationText.setText("")
         }
         return view
     }
