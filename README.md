@@ -1,4 +1,5 @@
-[![Contributor](https://img.shields.io/badge/contributors-1-blue.svg)](https://github.com/mmstewart/Server-Diagnostic-Application/graphs/contributors)
+![License](https://img.shields.io/badge/created-july%202018-brightgreen.svg)
+[![Contributor](https://img.shields.io/github/contributors/moroshko/autosuggest-highlight.svg?style=flat-square)](https://github.com/mmstewart/Server-Diagnostic-Application/graphs/contributors)
 [![License](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/mmstewart/Server-Diagnostic-Application/blob/master/LICENSE.md)
 
 
@@ -76,8 +77,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * [Equus](https://www.equuscs.com/)
 * [Navigation Drawer](https://www.youtube.com/watch?v=AS92bq3XxkA)
 * [Splash Screen](https://www.youtube.com/watch?v=jXtof6OUtcE&t=137s)
-* [Shields](https://shields.io/)
 
-### Updates
+## Update
 
 **7/18/2018** - Keyboard error fix
