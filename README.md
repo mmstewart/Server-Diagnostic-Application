@@ -59,7 +59,7 @@ Screenshots will be updated when there are changes to the design.
 
 ![imageedit_1_5793646663](https://user-images.githubusercontent.com/36175538/42836515-dfc949ec-89c0-11e8-84b2-fa61eaff2632.png)  
 
-![imageedit_2_6481307018](https://user-images.githubusercontent.com/36175538/42957371-19096f2e-8b48-11e8-93af-2dd1a7446a79.png)
+![imageedit_2_6481307018](https://user-images.githubusercontent.com/36175538/42957470-66b2601e-8b48-11e8-86a7-807c4be27587.png)
 
 ## Built With
 
@@ -82,5 +82,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Update
 
-**7/18/2018** - Keyboard error fix
+**7/18/2018** - Keyboard error fix  
 **7/19/2018** - Fixed inconsistent buttons and UI of Server Diagnostic Report
