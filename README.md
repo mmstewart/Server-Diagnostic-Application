@@ -9,7 +9,7 @@ This application diagnoses computer servers, converting JSON files to string.
 
 # Notice
 
-The application is not complete yet, I will be making updates to the code to make the app is completed. 
+**The application is not complete yet, I will be making updates to the code to make the app is completed.**
 
 This application includes a splash screen (Feel free to add your logo or remove it completely) and a navigation drawer.  
 
@@ -79,4 +79,4 @@ Screenshots will be updated when there are changes to the design.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
