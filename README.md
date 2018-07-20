@@ -3,7 +3,6 @@
 [![License](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/mmstewart/Server-Diagnostic-Application/blob/master/LICENSE.md)
 ![Updated](https://img.shields.io/badge/updated-july%202018-yellow.svg)
 
-
 # Server Diagnostic Application
 
 This application diagnoses computer servers, converting JSON files to string.  
@@ -14,7 +13,7 @@ The application is not complete yet, I will be making updates to the code to mak
 
 This application includes a splash screen (Feel free to add your logo or remove it completely) and a navigation drawer.  
 
-For updates, click [here](https://github.com/mmstewart/Server-Diagnostic-Application/blob/master/README.md#update) or see the update link below.
+For updates, click [here](https://github.com/mmstewart/Server-Diagnostic-Application/blob/master/README.md#update) or see the update header below.
 
 ## Setup
 
