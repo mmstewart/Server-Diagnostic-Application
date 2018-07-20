@@ -20,33 +20,9 @@ For updates, click [here](UPDATES.md)
 A step by step series of examples that tell you how to get the application running.
 
 ---
+To get the program to run, you just need to enter a url. You do not need to enter (https://), just www. or the address  
 
-First, the main change that you have to make is in the webService() method. To find the webservice() method, it is located at the bottom of the ServerReportScreen class. You are able to request what you need with the request builder.
-
-```diff
-+ var request : Request = Request.Builder()
-```
-
-Second, you are able to add your url, with the ability to add optional headers, post, get, delete, etc. with the request build.
-
-```diff
-var request : Request = Request.Builder()
-+        .url("url_here")
-+        .header("Authorization", Credentials.basic("a_username","a_password")
-+        .cacheControl(CacheControl.FORCE_NETWORK)
-```
-
-Last, add the build to the end of your calls and run the program.
-
-```diff
-var request : Request = Request.Builder()
-        .url("url_here")
-        .header("Authorization", Credentials.basic("a_username","a_password")
-        .cacheControl(CacheControl.FORCE_NETWORK)
-+       .build()
-```
-
-**Feel free to add your own calls, as the only two calls you need to run are url and build**
+![cropped](https://user-images.githubusercontent.com/36175538/43022314-780c16b8-8c2c-11e8-8d66-b0a660ac170d.png)
 
 ## Screenshots
 
@@ -60,7 +36,11 @@ Screenshots will be updated when there are changes to the design.
 
 ![imageedit_1_5793646663](https://user-images.githubusercontent.com/36175538/42836515-dfc949ec-89c0-11e8-84b2-fa61eaff2632.png)  
 
-![imageedit_2_6481307018](https://user-images.githubusercontent.com/36175538/42957470-66b2601e-8b48-11e8-86a7-807c4be27587.png)
+![imageedit_3_7321926534](https://user-images.githubusercontent.com/36175538/43022348-9e26bed4-8c2c-11e8-9fae-e32320343502.png)  
+
+![imageedit_1_9734156627](https://user-images.githubusercontent.com/36175538/43022382-b84eb12c-8c2c-11e8-9bd7-d5115e6e1032.png)  
+
+![imageedit_1_9456619627](https://user-images.githubusercontent.com/36175538/43022399-c7016cb4-8c2c-11e8-84fe-0060c7fce228.png)
 
 ## Built With
 
