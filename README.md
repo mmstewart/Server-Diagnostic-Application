@@ -5,7 +5,7 @@
 
 # Server Diagnostic Application
 
-This application diagnoses computer servers, converting JSON files to string.  
+This application diagnoses computer servers and URLS, converting JSON files to string statements. 
 
 # Notice
 
