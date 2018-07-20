@@ -13,7 +13,7 @@ The application is not complete yet, I will be making updates to the code to mak
 
 This application includes a splash screen (Feel free to add your logo or remove it completely) and a navigation drawer.  
 
-For updates, click [here](https://github.com/mmstewart/Server-Diagnostic-Application/blob/master/README.md#update) or see the update header below.
+For updates, click [here](UPDATES.md)
 
 ## Setup
 
@@ -70,13 +70,13 @@ Screenshots will be updated when there are changes to the design.
 
 * **Marcus Stewart** - *Initial work* - [MMStewart](https://github.com/mmstewart)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
 ## Acknowledgments
 
 * [Equus](https://www.equuscs.com/)
 * [Navigation Drawer](https://www.youtube.com/watch?v=AS92bq3XxkA)
 * [Splash Screen](https://www.youtube.com/watch?v=jXtof6OUtcE&t=137s)
 * [Shields](https://shields.io/)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
