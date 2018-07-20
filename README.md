@@ -61,4 +61,4 @@ Screenshots will be updated when there are changes to the design.
 
 ## License
 
-[LICENSE](LICENSE.md)
+[MIT](LICENSE.md)
