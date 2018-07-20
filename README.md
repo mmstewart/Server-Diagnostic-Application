@@ -20,7 +20,9 @@ For updates, click [here](UPDATES.md)
 A step by step series of examples that tell you how to get the application running.
 
 ---
-To get the program to run, you just need to enter a url. You do not need to enter (https://...), enter www.(addressExample).domain or  addressExample.domain
+To get the program to run, you just need to enter a url. You do not need to enter (https://...).  
+
+Enter www.(addressExample).domain or addressExample.domain
 
 ![cropped](https://user-images.githubusercontent.com/36175538/43022314-780c16b8-8c2c-11e8-8d66-b0a660ac170d.png)
 
