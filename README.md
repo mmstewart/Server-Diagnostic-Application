@@ -59,4 +59,4 @@ Screenshots will be updated when there are changes to the design.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
+[LICENSE](LICENSE.md)
