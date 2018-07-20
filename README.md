@@ -10,9 +10,11 @@ This application diagnoses computer servers, converting JSON files to string.
 
 # Notice
 
-The application is not complete yet, I will be making updates to the code to make the app is completed.  
+The application is not complete yet, I will be making updates to the code to make the app is completed. 
 
-This application includes a splash screen (Feel free to add your logo or remove it completely) and a navigation drawer.
+This application includes a splash screen (Feel free to add your logo or remove it completely) and a navigation drawer.  
+
+For updates, click [here](https://github.com/mmstewart/Server-Diagnostic-Application/blob/master/README.md#update) or see the update link below.
 
 ## Setup
 
