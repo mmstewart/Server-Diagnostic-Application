@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Patterns
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,9 +17,7 @@ import android.widget.*
 import okhttp3.*
 import org.json.JSONArray
 import org.json.JSONException
-import java.net.MalformedURLException
 import java.net.SocketTimeoutException
-import java.net.URL
 import kotlin.concurrent.thread
 
 class ServerReportScreen : Fragment() {
@@ -28,7 +27,10 @@ then have a line where the user can enter their ip address and submit using the 
     //VIEW
     private var button : Button? = null
     private var button2 : Button? = null
-    private var urlInput : TextView? = null
+    private var urlInput : EditText? = null
+    private var user : EditText? = null
+    private var pass : EditText? = null
+    private var token : EditText? = null
     private var textResult : TextView? = null
     private var spin : Spinner? = null
 
@@ -44,21 +46,25 @@ then have a line where the user can enter their ip address and submit using the 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view : View = inflater.inflate(R.layout.activity_server_report_screen, container,false)
 
-        val rL : RelativeLayout = view.findViewById(R.id.relative_layout)
-        val progressBar : ProgressBar = view.findViewById(R.id.PB)
-        val locationList = ArrayList<Location>()
-
-        urlInput = view.findViewById<View>(R.id.editText) as TextView
+        urlInput = view.findViewById<View>(R.id.editText) as EditText
+        token = view.findViewById(R.id.editText2) as EditText
+        user = view.findViewById(R.id.editText3) as EditText
+        pass = view.findViewById(R.id.editText4) as EditText
         spin = view.findViewById<View>(R.id.comboBox) as Spinner
         textResult= view.findViewById(R.id.textView2) as TextView
         button = view.findViewById(R.id.button1) as Button
         button2 = view.findViewById(R.id.button3) as Button
 
+        val url : String = urlInput!!.text.toString()
+        val rL : RelativeLayout = view.findViewById(R.id.relative_layout)
+        val progressBar : ProgressBar = view.findViewById(R.id.PB)
+        val locationList = ArrayList<Location>()
+
         //Buttons are disabled initially
         button!!.isEnabled = false
         button2!!.isEnabled = false
 
-        //Once a character is typed, buttons are enabled
+        //Once a character is typed in the URL EditText, buttons are enabled
         urlInput!!.addTextChangedListener(object: TextWatcher {
 
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
@@ -84,12 +90,11 @@ then have a line where the user can enter their ip address and submit using the 
         button!!.setOnClickListener {
             //Progress Bar is enabled when searching for the URL
             progressBar.visibility = View.VISIBLE
-
             textResult!!.text = "Waiting for response..."
             thread {
                 try {
                     client = http.client
-                    request = http.getRequest(urlInput!!.text.toString())
+                    request = http.getRequest(urlInput!!.text.toString(), user!!.text.toString(), pass!!.text.toString(), token!!.text.toString())
                     json = http.getURL(client, request)
 
                     //Hides keyboard when the submit button is pressed
@@ -114,22 +119,13 @@ then have a line where the user can enter their ip address and submit using the 
                                 locationList.add(r)
                             }
                             val locationString = ArrayList<String>()
-                            for (i in locationList){
-
+                            for (i in locationList) {
                                 locationString.add(i.getLocationName().toString())
                             }
                             textResult!!.text = s
 
                             spin!!.adapter = ArrayAdapter<String>(activity, android.R.layout.simple_spinner_item, locationString)
 
-                            spin!!.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-                                override fun onNothingSelected (parent: AdapterView<*>?) {
-                                    textResult!!.text = "Select an option"
-                                }
-                                override fun onItemSelected (parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                                    //
-                                }
-                            }
                         } catch (e : JSONException) {
                             textResult!!.text = json
                             //Progress Bar is disabled once the URL is loaded
@@ -153,7 +149,10 @@ then have a line where the user can enter their ip address and submit using the 
         //Clear Button
         button2!!.setOnClickListener {
             textResult!!.text = "Results Appear Here"
-            urlInput!!.text = ""
+            urlInput!!.text.clear()
+            user!!.text.clear()
+            pass!!.text.clear()
+            token!!.text.clear()
         }
         return view
     }
