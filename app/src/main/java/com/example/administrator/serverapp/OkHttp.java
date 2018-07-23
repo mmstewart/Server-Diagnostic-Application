@@ -1,6 +1,8 @@
 package com.example.administrator.serverapp;
 
 import java.io.IOException;
+
+import okhttp3.Credentials;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -22,9 +24,11 @@ public class OkHttp {
         return client = new OkHttpClient();
     }
 
-    public Request getRequest(String url) {
+    public Request getRequest(String url, String username, String password, String token) {
         return request = new Request.Builder()
                 .url("https://" + url)
+                .header("Authorization", Credentials.basic(username, password))
+                .header("Authorization", token)
                 .build();
     }
 }
