@@ -13,6 +13,8 @@ This application diagnoses computer servers and URLS, converting JSON files to s
 
 This application includes a splash screen (Feel free to add your logo or remove it completely) and a navigation drawer.  
 
+# Updates
+
 For updates, click [here](UPDATES.md)
 
 ## Setup
