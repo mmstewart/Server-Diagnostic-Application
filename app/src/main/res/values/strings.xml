@@ -4,13 +4,12 @@
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="welcome_to_your_server">Welcome to your Server</string>
-    <string name="diagnose">Diagnose</string>
-    <string name="authentication_optional">Authentication (Optional)</string>
     <string name="authentication">Authentication:</string>
-    <string name="token_optional">Token (Optional)</string>
     <string name="submit">Submit</string>
     <string name="clear">Clear</string>
     <string name="server_diagnostic_report"><u>Server Diagnostic Report</u></string>
     <string name="url">URL:</string>
     <string name="results_appear_here">Results Appear Here</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
 </resources>
