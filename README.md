@@ -26,7 +26,7 @@ To get the program to run, you just need to enter a url. You do not need to ente
 
 Enter www.(addressExample).domain or addressExample.domain
 
-![cropped](https://user-images.githubusercontent.com/36175538/43022314-780c16b8-8c2c-11e8-8d66-b0a660ac170d.png)
+![cropped](https://user-images.githubusercontent.com/36175538/43100055-bbcac7dc-8e89-11e8-92e2-1fdf5ae30b81.png)
 
 ## Screenshots
 
@@ -40,11 +40,11 @@ Screenshots will be updated when there are changes to the design.
 
 ![imageedit_1_5793646663](https://user-images.githubusercontent.com/36175538/42836515-dfc949ec-89c0-11e8-84b2-fa61eaff2632.png)  
 
-![imageedit_3_7321926534](https://user-images.githubusercontent.com/36175538/43022348-9e26bed4-8c2c-11e8-9fae-e32320343502.png)  
+![imageedit_2_8479214098](https://user-images.githubusercontent.com/36175538/43099907-4e35f070-8e89-11e8-8711-17aed1c68024.png) 
 
-![imageedit_1_9734156627](https://user-images.githubusercontent.com/36175538/43022382-b84eb12c-8c2c-11e8-9bd7-d5115e6e1032.png)  
+![imageedit_1_3938665643](https://user-images.githubusercontent.com/36175538/43099898-439f779e-8e89-11e8-9485-ebcd2645a3d3.png)  
 
-![imageedit_1_9456619627](https://user-images.githubusercontent.com/36175538/43022399-c7016cb4-8c2c-11e8-84fe-0060c7fce228.png)
+![imageedit_1_9830313950](https://user-images.githubusercontent.com/36175538/43099901-46a8d2f0-8e89-11e8-9c5d-19b6077778e1.png)
 
 ## Built With
 
