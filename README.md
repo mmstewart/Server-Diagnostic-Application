@@ -1,8 +1,8 @@
 # Server Diagnostic Application  
 ## An application for diagnosing IP Addresses and URLs, converting JSON files to string using OkHttp.  
 
-[![License](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/mmstewart/Server-Diagnostic-Application/blob/master/LICENSE.md)  
-[![Contributors](https://img.shields.io/badge/contributors-1-lightgrey.svg)](https://github.com/mmstewart/Server-Diagnostic-Application/graphs/contributors)  
+[![License](https://img.shields.io/badge/license-MIT-red.svg)](https://github.com/mmstewart/Server-Diagnostic-Application/blob/master/LICENSE.md)  
+[![Contributors](https://img.shields.io/badge/contributors-1-blue.svg)](https://github.com/mmstewart/Server-Diagnostic-Application/graphs/contributors)  
 ![Created](https://img.shields.io/badge/created-july%202018-brightgreen.svg)  
 ![Updated](https://img.shields.io/badge/updated-july%202018-yellow.svg)  
 
