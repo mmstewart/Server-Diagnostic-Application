@@ -1,5 +1,5 @@
 # Server Diagnostic Application  
-## An application for diagnosing IP Addresses and URLs, converting JSON files to string sta.  
+## An application for diagnosing IP Addresses and URLs, converting JSON files to string using OkHttp.  
 
 [![License](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/mmstewart/Server-Diagnostic-Application/blob/master/LICENSE.md)  
 [![Contributors](https://img.shields.io/badge/contributors-1-lightgrey.svg)](https://github.com/mmstewart/Server-Diagnostic-Application/graphs/contributors)  
