@@ -16,8 +16,6 @@ import org.json.JSONArray
 import org.json.JSONException
 import java.lang.IllegalArgumentException
 import java.net.SocketTimeoutException
-import java.util.regex.Matcher
-import java.util.regex.Pattern
 import kotlin.concurrent.thread
 
 class ServerReportScreen : Fragment() {
