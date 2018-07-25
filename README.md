@@ -17,9 +17,10 @@ This application includes a splash screen (Feel free to add your logo or remove 
 A step by step series of examples that tell you how to get the application running.
 
 ---
+
 To get the program to run, you just need to enter a url. You do not need to enter (https://...).  
 
-Enter www.(addressExample).domain or addressExample.domain
+On the URL line, enter www.example.com or example.com
 
 ![cropped](https://user-images.githubusercontent.com/36175538/43100055-bbcac7dc-8e89-11e8-92e2-1fdf5ae30b81.png)
 
