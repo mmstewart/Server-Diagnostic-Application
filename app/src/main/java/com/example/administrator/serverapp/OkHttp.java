@@ -1,7 +1,6 @@
 package com.example.administrator.serverapp;
 
 import java.io.IOException;
-
 import okhttp3.Credentials;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -32,4 +31,3 @@ public class OkHttp {
                 .build();
     }
 }
-
