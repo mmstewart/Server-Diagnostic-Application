@@ -9,7 +9,7 @@ import android.os.Handler
 import android.view.View
 
 class SplashScreen : AppCompatActivity() {
-    private val SPLASH_TIME_OUT = 4000 //Splash screen duration of 4 seconds.Feel free to change time duration.
+    private val SPLASH_TIME_OUT = 4000 //Splash screen duration of 4 seconds
     private var firstTime: Boolean = false
     private lateinit var sharedPreferences: SharedPreferences
 
@@ -51,7 +51,7 @@ class SplashScreen : AppCompatActivity() {
     and you can't press the screen to access the navigation bar */
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
-        if(hasFocus) {
+        if (hasFocus) {
             window.decorView.systemUiVisibility =
                     View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION or
                     View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or
