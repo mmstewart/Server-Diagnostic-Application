@@ -14,7 +14,7 @@ This application includes a splash screen (Feel free to add your logo or remove 
 
 # Updates
 
-For updates, click [here](UPDATES.md)
+For updates, click [here](CHANGELOG.md)
 
 ## Setup
 
