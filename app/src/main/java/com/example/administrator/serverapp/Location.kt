@@ -17,7 +17,7 @@ class Location {
         return this.locationName
     }
 
-    fun setLocationName(s : String) {
+    fun setLocationName(s: String) {
         this.locationName = s
     }
 
@@ -25,7 +25,7 @@ class Location {
         return this.longitude
     }
 
-    fun setLongitude(s : String) {
+    fun setLongitude(s: String) {
         this.longitude = s
     }
 
@@ -33,7 +33,7 @@ class Location {
         return this.latitude
     }
 
-    fun setLatitude(s : String) {
+    fun setLatitude(s: String) {
         this.latitude = s
     }
 }
