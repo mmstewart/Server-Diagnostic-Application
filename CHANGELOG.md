@@ -28,6 +28,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Updated UI in ServerReportScree class  
 ### Added
 - Users can now use Username, Password, and Tokem fields
+## [Update 5] - 2018-07-25
+### Removed
+- Buttons disabled when not in use
+### Added
+- Buttons are present on launch
+- Submit button informs user to enter URL when missing
+- Error symbol  to textResult lines when userr has invalid URL or missing URL
+### Fixed
+- Invalid or missing URLs no longer crash app
 
 [0.9.0]: https://github.com/robinst/autolink-java/compare/autolink-0.8.0...autolink-0.9.0
 [0.8.0]: https://github.com/robinst/autolink-java/compare/autolink-0.7.0...autolink-0.8.0
