@@ -12,10 +12,6 @@
 
 This application includes a splash screen (Feel free to add your logo or remove it completely) and a navigation drawer.  
 
-# Updates
-
-For updates, click [here](CHANGELOG.md)
-
 ## Setup
 
 A step by step series of examples that tell you how to get the application running.
