@@ -7,15 +7,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 **All updates are before version 1 release!**
 
-## Update 1 - 2018-07-18
+## [Update 1] - 2018-07-18
 ### Fixed
 - Keyboard pop up error
 
-## Update 2 - 2018-07-19
+## [Update 2] - 2018-07-19
 ### Fixed
 - Inconsistent buttons and UI of Server Diagnostic Report
 
-## Update 3 - 2018-07-20
+## [Update 3] - 2018-07-20
 ### Changed
 - Updated UI in ServerReportScreen class  
 ### Added
@@ -23,7 +23,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Buttons disabled when not in use  
 - ScrollView for TextView Results
 
-## Update 4 - 2018-07-23
+## [Update 4] - 2018-07-23
 ### Changed
 - Updated UI in ServerReportScree class  
 ### Added
