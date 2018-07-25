@@ -18,7 +18,7 @@ A step by step series of examples that tell you how to get the application runni
 
 ---
 
-To get the program to run, you just need to enter a url. You do not need to enter (https://...).  
+To get the program to run, you just need to enter a url. 
 
 On the URL line, enter www.example.com or example.com
 
