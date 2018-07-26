@@ -20,9 +20,9 @@ A step by step series of examples that tell you how to get the application runni
 
 To get the program to run, you just need to enter a url. 
 
-On the URL line, enter www.example.com or example.com
+On the URL line, enter www.example.com, example.com, or your IP Address.
 
-![cropped](https://user-images.githubusercontent.com/36175538/43100055-bbcac7dc-8e89-11e8-92e2-1fdf5ae30b81.png)
+![URL](https://user-images.githubusercontent.com/36175538/43285013-464b6b22-90e3-11e8-98ad-78bad2748c38.png)
 
 ## Screenshots
 
@@ -30,17 +30,17 @@ Screenshots will be updated when there are changes to the design.
 
 ---
 
-![imageedit_2_2117761380](https://user-images.githubusercontent.com/36175538/42836482-c69942ec-89c0-11e8-8822-745c391661ed.png)  
+![1](https://user-images.githubusercontent.com/36175538/42836482-c69942ec-89c0-11e8-8822-745c391661ed.png)  
 
-![imageedit_1_5367105670](https://user-images.githubusercontent.com/36175538/42836513-dd365490-89c0-11e8-9779-da377539ee7d.png)  
+![2](https://user-images.githubusercontent.com/36175538/42836513-dd365490-89c0-11e8-9779-da377539ee7d.png)  
 
-![imageedit_1_5793646663](https://user-images.githubusercontent.com/36175538/42836515-dfc949ec-89c0-11e8-84b2-fa61eaff2632.png)  
+![3](https://user-images.githubusercontent.com/36175538/42836515-dfc949ec-89c0-11e8-84b2-fa61eaff2632.png)  
 
-![imageedit_2_8479214098](https://user-images.githubusercontent.com/36175538/43099907-4e35f070-8e89-11e8-8711-17aed1c68024.png) 
+![4](https://user-images.githubusercontent.com/36175538/43284965-1e627542-90e3-11e8-9e2d-43e015373eda.png)  
 
-![imageedit_1_3938665643](https://user-images.githubusercontent.com/36175538/43099898-439f779e-8e89-11e8-9485-ebcd2645a3d3.png)  
+![5](https://user-images.githubusercontent.com/36175538/43284966-1ffdc41a-90e3-11e8-8341-cf88bd158aa2.png)  
 
-![imageedit_1_9830313950](https://user-images.githubusercontent.com/36175538/43099901-46a8d2f0-8e89-11e8-9c5d-19b6077778e1.png)
+![6](https://user-images.githubusercontent.com/36175538/43284969-218749fa-90e3-11e8-9f3e-f6a50bcfc095.png)
 
 ## Built With
 
