@@ -53,7 +53,6 @@ then have a line where the user can enter their ip address and submit using the 
         button = view.findViewById(R.id.button1) as Button
         button2 = view.findViewById(R.id.button3) as Button
 
-        val url: String = urlInput!!.text.toString()
         val rL: RelativeLayout = view.findViewById(R.id.relative_layout)
         val progressBar: ProgressBar = view.findViewById(R.id.PB)
         val locationList = ArrayList<Location>()
@@ -62,13 +61,13 @@ then have a line where the user can enter their ip address and submit using the 
         (activity as AppCompatActivity).supportActionBar!!.title = "Server Diagnostic Report"
 
         //Progress Bar/Loading symbol is disabled at default
-        progressBar.visibility = View.GONE
+        progressBar.visibility = View.INVISIBLE
 
         //Submit Button
         button!!.setOnClickListener {
 
             //Progress Bar is disabled until correct URL
-            progressBar.visibility = View.GONE
+            progressBar.visibility = View.INVISIBLE
 
             textResult!!.text = "Waiting for response..."
 
@@ -85,8 +84,7 @@ then have a line where the user can enter their ip address and submit using the 
                 textResult!!.error = ""
                 textResult!!.text = "Invalid URL  "
             } else if (urlInput!!.text.toString().contains("https://")
-                    || urlInput!!.text.toString().contains("http://")
-                    || !urlInput!!.text.toString().contains(".com")) {
+                    || urlInput!!.text.toString().contains("http://")) {
                 textResult!!.error = ""
                 textResult!!.text = "Invalid URL  "
             } else {
@@ -117,18 +115,12 @@ then have a line where the user can enter their ip address and submit using the 
 
                                     locationList.add(r)
                                 }
-                                val locationString = ArrayList<String>()
-                                for (i in locationList) {
-                                    locationString.add(i.getLocationName().toString())
-                                }
                                 textResult!!.text = s
-
-                                spin!!.adapter = ArrayAdapter<String>(activity, android.R.layout.simple_spinner_item, locationString)
                             } catch (e: JSONException) {
                                 textResult!!.text = json
 
                                 //Progress Bar is disabled once the URL is loaded
-                                progressBar.visibility = View.GONE
+                                progressBar.visibility = View.INVISIBLE
                             } catch (e: SocketTimeoutException) {
                                 textResult!!.text = e.message
                             }
@@ -165,4 +157,5 @@ then have a line where the user can enter their ip address and submit using the 
         val imm: InputMethodManager = context.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
         imm.hideSoftInputFromWindow(view.windowToken, InputMethodManager.HIDE_NOT_ALWAYS)
     }
+    
 }
