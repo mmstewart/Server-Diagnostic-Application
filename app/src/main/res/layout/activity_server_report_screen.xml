@@ -176,7 +176,7 @@
             android:background="@drawable/oval"
             android:ems="20"
             android:hint="Token (Optional)"
-            android:inputType="text"
+            android:inputType="textNoSuggestions|textVisiblePassword"
             android:padding="10dp"
             android:singleLine="true"
             tools:ignore="HardcodedText" />
