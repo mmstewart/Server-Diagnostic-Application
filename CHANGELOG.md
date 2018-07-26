@@ -38,6 +38,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 - Invalid or missing URLs no longer crash app
 
+## [Update 6] - 2018-07-26
+### Removed
+- Down arrow on the Spinner in activity_server_report_screen.kt
+- 'Server Diagnostic Report' text in activity_server_report_screen.kt
+### Changed
+- UI layout of activity_server_report_screen.kt
+### Added
+- Character count of 30 for Username EditText in activity_server_report_screen.kt
+- Password visibility option for Password EditText in activity_server_report_screen.kt
+
+
 [0.9.0]: https://github.com/robinst/autolink-java/compare/autolink-0.8.0...autolink-0.9.0
 [0.8.0]: https://github.com/robinst/autolink-java/compare/autolink-0.7.0...autolink-0.8.0
 [0.7.0]: https://github.com/robinst/autolink-java/compare/autolink-0.6.0...autolink-0.7.0
