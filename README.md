@@ -1,6 +1,7 @@
 # Server Diagnostic Application  
 ## An application for diagnosing IP Addresses and URLs, converting JSON files to string using OkHttp.    
 
+[![Build Status](https://travis-ci.org/mmstewart/Server-Diagnostic-Application.svg?branch=master)](https://travis-ci.org/mmstewart/Server-Diagnostic-Application)
 [![Coverage Status](https://coveralls.io/repos/github/mmstewart/Server-Diagnostic-Application/badge.svg)](https://coveralls.io/github/mmstewart/Server-Diagnostic-Application)
 [![License](https://img.shields.io/badge/license-MIT-red.svg)](https://github.com/mmstewart/Server-Diagnostic-Application/blob/master/LICENSE.md)
 [![Contributors](https://img.shields.io/badge/contributors-1-blue.svg)](https://github.com/mmstewart/Server-Diagnostic-Application/graphs/contributors)
