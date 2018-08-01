@@ -14,7 +14,7 @@ jdk:
   - oraclejdk8
   
 script:
-  - ./gradlew build jacocoTestReport
+  - ./gradlew build jacocoTestReport assembleAndroidTest
   - ./gradlew connectedCheck
   - chmod +x ./gradlew
 
