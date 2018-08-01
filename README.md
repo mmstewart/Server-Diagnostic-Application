@@ -1,5 +1,5 @@
 # Server Diagnostic Application  
-## An application for diagnosing IP Addresses and URLs, converting JSON files to string using OkHttp.    
+## An application for diagnosing IP Addresses and URLs, converting JSON files to string using OkHttp. Made for Kotlin. :heart:   
 
 [![Build Status](https://travis-ci.org/mmstewart/Server-Diagnostic-Application.svg?branch=master)](https://travis-ci.org/mmstewart/Server-Diagnostic-Application)
 [![Coverage Status](https://coveralls.io/repos/github/mmstewart/Server-Diagnostic-Application/badge.svg)](https://coveralls.io/github/mmstewart/Server-Diagnostic-Application)
