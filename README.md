@@ -55,7 +55,6 @@ Screenshots will be updated when there are changes to the design.
 * [Equus](https://www.equuscs.com/)
 * [Navigation Drawer](https://www.youtube.com/watch?v=AS92bq3XxkA)
 * [Splash Screen](https://www.youtube.com/watch?v=jXtof6OUtcE&t=137s)
-* [Shields](https://shields.io/)
 
 ## License
 
