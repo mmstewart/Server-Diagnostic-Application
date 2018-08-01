@@ -1,8 +1,10 @@
-language: kotlin
+language: android
 sudo: false
-notifications:
-  email:
-    on_success: never
+   
+android:
+  components:
+    - android-28
+    - build-tools-27.0.3
     
 os:
   - linux
