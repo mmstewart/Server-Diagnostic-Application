@@ -1,6 +1,9 @@
 language: android
 sudo: false
-   
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
 android:
   components:
     - android-28
