@@ -20,7 +20,7 @@ A step by step series of examples that tell you how to get the application runni
 
 To get the program to run, you just need to enter a url. 
 
-On the URL line, enter example.com, or your IP Address.
+On the URL line, enter **example.com**, or your **IP Address**.
 
 ![URL](https://user-images.githubusercontent.com/36175538/43285013-464b6b22-90e3-11e8-98ad-78bad2748c38.png)
 
