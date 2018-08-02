@@ -25,10 +25,10 @@ jdk:
 before_install:
   - chmod +x gradlew
   - yes | sdkmanager "build-tools;28.0.0"
-  - android list targets
   
 script:
   - ./gradlew build jacocoTestReport assembleAndroidTest
+  - android list targets
   - echo no | android create avd --force -n test --target $ANDROID_TARGET --abi $ANDROID_ABI
   - emulator -avd test -no-skin -no-window &
   - android-wait-for-emulator
