@@ -1,5 +1,4 @@
 language: android
-jdk: oraclejdk8
 sudo: false
 
 env:
@@ -19,6 +18,9 @@ android:
     
 os:
   - linux
+  
+jdk: 
+  - oraclejdk8
 
 before_install:
   - chmod +x gradlew
