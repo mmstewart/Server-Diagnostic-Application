@@ -14,8 +14,8 @@ import android.widget.*
 import okhttp3.*
 import org.json.JSONArray
 import org.json.JSONException
-import java.lang.IllegalArgumentException
-import java.net.SocketTimeoutException
+import java.net.*
+import java.util.*
 import kotlin.concurrent.thread
 
 class ServerReportScreen : Fragment() {
@@ -80,18 +80,32 @@ then have a line where the user can enter their ip address and submit using the 
                 text result states "Enter a URL" */
                 textResult!!.text = "Enter a URL  "
 
-            } else if (!Patterns.WEB_URL.matcher(urlInput!!.text.toString().toLowerCase()).matches()) {
+            } else if (!Patterns.WEB_URL.matcher(urlInput!!.text.toString().toLowerCase(Locale.US)).matches()) {
                 textResult!!.error = ""
                 textResult!!.text = "Invalid URL  "
-            } else if (urlInput!!.text.toString().contains("https://")
-                    || urlInput!!.text.toString().contains("http://")) {
+            } else if (urlInput!!.text.toString().startsWith("https://")) {
                 textResult!!.error = ""
-                textResult!!.text = "Invalid URL  "
+                textResult!!.text = "Invalid URL, Remove https://  "
+            } else if (urlInput!!.text.toString().startsWith("http://")) {
+                textResult!!.error = ""
+                textResult!!.text = "Invalid URL, Remove http://  "
+            } else if (urlInput!!.text.toString().startsWith(".")) {
+                textResult!!.error = ""
+                textResult!!.text = "Invalid URL, Remove .  "
+            } else if (urlInput!!.text.toString().startsWith("w.")) {
+                textResult!!.error = ""
+                textResult!!.text = "Invalid URL, Remove w.  "
+            } else if (urlInput!!.text.toString().startsWith("ww.")) {
+                textResult!!.error = ""
+                textResult!!.text = "Invalid URL, Remove ww.  "
+            } else if (urlInput!!.text.toString().startsWith("www.")) {
+                textResult!!.error = ""
+                textResult!!.text = "Invalid URL, Remove www.  "
             } else {
                 thread {
                     try {
                         client = http.client
-                        request = http.getRequest(urlInput!!.text.toString(), user!!.text.toString(), pass!!.text.toString(), token!!.text.toString())
+                        request = http.getRequest(urlInput!!.text.toString().toLowerCase(Locale.US), user!!.text.toString(), pass!!.text.toString(), token!!.text.toString())
                         json = http.getURL(client, request)
 
                         //Hides keyboard when the submit button is pressed
@@ -157,5 +171,5 @@ then have a line where the user can enter their ip address and submit using the 
         val imm: InputMethodManager = context.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
         imm.hideSoftInputFromWindow(view.windowToken, InputMethodManager.HIDE_NOT_ALWAYS)
     }
-    
+
 }
