@@ -19,14 +19,14 @@ import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_home_screen.*
 
 class HomeScreen : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
-    lateinit var drawer : DrawerLayout
-    private lateinit var toggle : ActionBarDrawerToggle
+    lateinit var drawer: DrawerLayout
+    private lateinit var toggle: ActionBarDrawerToggle
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_screen)
-        
-        //Sets Home screen title of action bar to "Home"
+
+        //Sets the home screen title of action bar to "Home"
         supportActionBar!!.title = "Home"
 
         drawer = findViewById(R.id.drawer1)
@@ -41,10 +41,11 @@ class HomeScreen : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
         toggle.syncState()
         supportActionBar!!.setDisplayHomeAsUpEnabled(true) //Adds menu icon
 
-        nav_view1.setNavigationItemSelectedListener(this) //The navigation view will be notified when a menu item is selected
+        //The navigation view will be notified when a menu item is selected
+        nav_view1.setNavigationItemSelectedListener(this)
 
-        //Fade in/zoom in animation of 'Welcome to your Server' text
-        val myText : TextView = findViewById(R.id.textView)
+        /* Fade in/zoom in animation of 'Welcome to your Server' text */
+        val myText: TextView = findViewById(R.id.textView)
         val animation = AnimationSet(true)
         animation.addAnimation(AlphaAnimation(0.0f, 1.0f))
         animation.addAnimation(ScaleAnimation(
@@ -65,9 +66,15 @@ class HomeScreen : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
     //Function allow user to access and press on the tabs in the navigation drawer
     private fun navScreen(id: Int) {
         val fragment = when (id) {
-            R.id.Home -> { HomeFragment() }
-            R.id.Diagnostic -> { ServerReportScreen() }
-            else -> { HomeFragment() }
+            R.id.Home -> {
+                HomeFragment()
+            }
+            R.id.Diagnostic -> {
+                ServerReportScreen()
+            }
+            else -> {
+                HomeFragment()
+            }
         }
         supportFragmentManager
                 .beginTransaction()
@@ -95,7 +102,7 @@ class HomeScreen : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
 //Fragment Class of Home (Allows user to press on the navigation drawer tabs)
 class HomeFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        
+
         //After the navigation drawer is used, the title of the action bar is maintained to say "Home"
         (activity as AppCompatActivity).supportActionBar!!.title = "Home"
 
