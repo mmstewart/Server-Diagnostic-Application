@@ -3,7 +3,7 @@ sudo: false
 
 env:
   global:
-    - ANDROID_TARGET=android-28
+    - ANDROID_TARGET=android-15
     - ANDROID_ABI=google_apis/armeabi-v7a
 
 android:
