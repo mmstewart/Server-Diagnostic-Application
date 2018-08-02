@@ -3,13 +3,13 @@ sudo: false
 
 env:
   global:
-    - ANDROID_TARGET=android-21
+    - ANDROID_TARGET=android-24
     - ANDROID_ABI=google_apis/armeabi-v7a
 
 android:
   components:
     - android-28
-    - android-21
+    - android-24
     - tools
     - platform-tools
     - build-tools-28.0.0
