@@ -8,7 +8,7 @@ env:
 
 android:
   components:
-    - android-28
+    - android-27
     - tools
     - platform-tools
     - build-tools-27.0.3
