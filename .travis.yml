@@ -35,5 +35,3 @@ script:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-
-[Source]: https://allegro.tech/2016/03/integrating-android-project-with-codecov.html
