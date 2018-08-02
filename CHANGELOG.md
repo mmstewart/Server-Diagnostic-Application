@@ -48,6 +48,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Character count of 30 for Username EditText in activity_server_report_screen.kt
 - Password visibility option for Password EditText in activity_server_report_screen.kt
 
+## [Update 7] - 2018-08-02
+### Security
+- Requirements so that the application crashes less
+### Added
+- Travis ci and Codecov shields
+
 
 [0.9.0]: https://github.com/robinst/autolink-java/compare/autolink-0.8.0...autolink-0.9.0
 [0.8.0]: https://github.com/robinst/autolink-java/compare/autolink-0.7.0...autolink-0.8.0
