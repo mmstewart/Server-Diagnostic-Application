@@ -54,12 +54,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Travis ci and Codecov shields
 
-
-[0.9.0]: https://github.com/robinst/autolink-java/compare/autolink-0.8.0...autolink-0.9.0
-[0.8.0]: https://github.com/robinst/autolink-java/compare/autolink-0.7.0...autolink-0.8.0
-[0.7.0]: https://github.com/robinst/autolink-java/compare/autolink-0.6.0...autolink-0.7.0
-[0.6.0]: https://github.com/robinst/autolink-java/compare/autolink-0.5.0...autolink-0.6.0
-[0.5.0]: https://github.com/robinst/autolink-java/compare/autolink-0.4.0...autolink-0.5.0
-[0.4.0]: https://github.com/robinst/autolink-java/compare/autolink-0.3.0...autolink-0.4.0
 [0.3.0]: https://github.com/robinst/autolink-java/compare/autolink-0.2.0...autolink-0.3.0
 [0.2.0]: https://github.com/robinst/autolink-java/compare/autolink-0.1.0...autolink-0.2.0
