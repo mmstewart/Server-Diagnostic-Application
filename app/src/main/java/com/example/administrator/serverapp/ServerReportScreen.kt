@@ -11,7 +11,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import android.widget.*
-import okhttp3.*
 import org.json.JSONArray
 import org.json.JSONException
 import java.net.*
@@ -33,8 +32,6 @@ then have a line where the user can enter their ip address and submit using the 
     private var spin: Spinner? = null
 
     //OKHTTP
-    private var client: OkHttpClient? = null
-    private var request: Request? = null
     private var http = OkHttp()
 
     //JSON RETURN
@@ -103,44 +100,44 @@ then have a line where the user can enter their ip address and submit using the 
                 textResult!!.text = "Invalid URL, Remove www.  "
             } else {
                 thread {
-                    try {
-                        client = http.client
-                        request = http.getRequest(urlInput!!.text.toString().toLowerCase(Locale.US), user!!.text.toString(), pass!!.text.toString(), token!!.text.toString())
-                        json = http.getURL(client, request)
+                    kotlin.run {
+                        try {
+                            json = http.getURL(urlInput!!.text.toString(), user!!.text.toString(), pass!!.text.toString(), token!!.text.toString())
 
-                        //Hides keyboard when the submit button is pressed
-                        val imm: InputMethodManager = activity!!.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-                        imm.hideSoftInputFromWindow(activity!!.currentFocus.windowToken, 0)
+                            //Hides keyboard when the submit button is pressed
+                            val imm: InputMethodManager = activity!!.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                            imm.hideSoftInputFromWindow(activity!!.currentFocus.windowToken, 0)
 
-                        activity!!.runOnUiThread {
-                            try {
-                                jsonResp = JSONArray(json)
-                                var s = ""
-                                locationList.clear()
-                                for (i in 0 until jsonResp.length()) {
-                                    val r = Location()
-                                    s += "Location: " + jsonResp.getJSONObject(i).getString("locationName") + "\n" +
-                                            "Latitude: " + jsonResp.getJSONObject(i).getString("latitude") + "\n" +
-                                            "Longitude: " + jsonResp.getJSONObject(i).getString("longitude") + "\n\n"
+                            activity!!.runOnUiThread {
+                                try {
+                                    jsonResp = JSONArray(json)
+                                    var s = ""
+                                    locationList.clear()
+                                    for (i in 0 until jsonResp.length()) {
+                                        val r = Location()
+                                        s += "Location: " + jsonResp.getJSONObject(i).getString("locationName") + "\n" +
+                                                "Latitude: " + jsonResp.getJSONObject(i).getString("latitude") + "\n" +
+                                                "Longitude: " + jsonResp.getJSONObject(i).getString("longitude") + "\n\n"
 
-                                    r.setLocationName(jsonResp.getJSONObject(i).getString("locationName"))
-                                    r.setLatitude(jsonResp.getJSONObject(i).getString("latitude"))
-                                    r.setLongitude(jsonResp.getJSONObject(i).getString("longitude"))
+                                        r.setLocationName(jsonResp.getJSONObject(i).getString("locationName"))
+                                        r.setLatitude(jsonResp.getJSONObject(i).getString("latitude"))
+                                        r.setLongitude(jsonResp.getJSONObject(i).getString("longitude"))
 
-                                    locationList.add(r)
+                                        locationList.add(r)
+                                    }
+                                    textResult!!.text = s
+                                } catch (e: JSONException) {
+                                    textResult!!.text = json
+
+                                    //Progress Bar is disabled once the URL is loaded
+                                    progressBar.visibility = View.INVISIBLE
+                                } catch (e: SocketTimeoutException) {
+                                    textResult!!.text = e.message
                                 }
-                                textResult!!.text = s
-                            } catch (e: JSONException) {
-                                textResult!!.text = json
-
-                                //Progress Bar is disabled once the URL is loaded
-                                progressBar.visibility = View.INVISIBLE
-                            } catch (e: SocketTimeoutException) {
-                                textResult!!.text = e.message
                             }
+                        } catch (e: IllegalArgumentException) {
+                            textResult!!.text = e.message
                         }
-                    } catch (e: IllegalArgumentException) {
-                        textResult!!.text = e.message
                     }
                 }
                 progressBar.visibility = View.VISIBLE
@@ -162,6 +159,7 @@ then have a line where the user can enter their ip address and submit using the 
             user!!.text.clear()
             pass!!.text.clear()
             token!!.text.clear()
+            progressBar.visibility = View.INVISIBLE
         }
         return view
     }
