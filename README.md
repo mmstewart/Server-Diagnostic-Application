@@ -27,11 +27,6 @@
       src="https://img.shields.io/badge/contributors-1-blue.svg"
     />
   </a>
-
-[![Build Status]()]()
-  
-[![codecov]()]()
-
 </p>
 
 # Notice
