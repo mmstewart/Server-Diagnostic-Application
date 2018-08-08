@@ -1,11 +1,38 @@
-# Server Diagnostic Application  
+<h1 align=center> Server Diagnostic Application </h1> 
 
 <p align=center> An application for diagnosing IP Addresses and URLs, converting JSON files to string using OkHttp. Made with Kotlin. :heart: </p>   
 
-[![Build Status](https://travis-ci.org/mmstewart/Server-Diagnostic-Application.svg?branch=master)](https://travis-ci.org/mmstewart/Server-Diagnostic-Application)
-[![codecov](https://codecov.io/gh/mmstewart/Server-Diagnostic-Application/branch/master/graph/badge.svg)](https://codecov.io/gh/mmstewart/Server-Diagnostic-Application)
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/mmstewart/Server-Diagnostic-Application/blob/master/LICENSE.md)
-[![Contributors](https://img.shields.io/badge/contributors-1-blue.svg)](https://github.com/mmstewart/Server-Diagnostic-Application/graphs/contributors)
+<p align=center>
+  <a href="https://travis-ci.org/mmstewart/Server-Diagnostic-Application">
+    <img
+      alt="build_status:?"
+      src="https://travis-ci.org/mmstewart/Server-Diagnostic-Application.svg?branch=master"
+    />
+  </a>
+    <a href="https://codecov.io/gh/mmstewart/Server-Diagnostic-Application">
+    <img
+      alt="codecov:?"
+      src="https://codecov.io/gh/mmstewart/Server-Diagnostic-Application/branch/master/graph/badge.svg"
+    />
+  </a>
+    <a href="./LICENSE.md">
+    <img
+      alt="license:mit"
+      src="https://img.shields.io/github/license/mashape/apistatus.svg"
+    />
+  </a>
+  <a href="https://github.com/mmstewart/Server-Diagnostic-Application/graphs/contributors">
+    <img
+      alt="contributors:?"
+      src="https://img.shields.io/badge/contributors-1-blue.svg"
+    />
+  </a>
+
+[![Build Status]()]()
+  
+[![codecov]()]()
+
+</p>
 
 # Notice
 
