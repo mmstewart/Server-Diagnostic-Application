@@ -15,7 +15,7 @@
       src="https://codecov.io/gh/mmstewart/Server-Diagnostic-Application/branch/master/graph/badge.svg"
     />
   </a>
-    <a href="./LICENSE.md">
+    <a href="./LICENSE">
     <img
       alt="license:mit"
       src="https://img.shields.io/github/license/mashape/apistatus.svg"
@@ -83,4 +83,4 @@ Screenshots will be updated when there are changes to the design.
 
 Copyright (c) 2018<!--- -(Future Years) --> Marcus Stewart, see Git history
 
-MIT licensed, see [LICENSE.md](LICENSE.md) file.
+MIT licensed, see [LICENSE](LICENSE) file.
