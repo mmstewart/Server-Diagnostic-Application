@@ -9,12 +9,6 @@
       src="https://travis-ci.org/mmstewart/Server-Diagnostic-Application.svg?branch=master"
     />
   </a>
-    <a href="https://codecov.io/gh/mmstewart/Server-Diagnostic-Application">
-    <img
-      alt="codecov:?"
-      src="https://codecov.io/gh/mmstewart/Server-Diagnostic-Application/branch/master/graph/badge.svg"
-    />
-  </a>
     <a href="./LICENSE">
     <img
       alt="license:mit"
