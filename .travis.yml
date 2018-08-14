@@ -1,11 +1,6 @@
 language: android
 sudo: false
 
-env:
-  global:
-    - ANDROID_TARGET=android-24
-    - ANDROID_ABI=armeabi-v7a
-
 android:
   components:
     - android-28
@@ -13,8 +8,6 @@ android:
     - tools
     - platform-tools
     - build-tools-28.0.0
-    - extra-android-m2repository
-    - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
     
 os:
   - linux
@@ -22,18 +15,5 @@ os:
 jdk: 
   - oraclejdk8
 
-before_install:
-  - chmod +x gradlew
-  - yes | sdkmanager "build-tools;28.0.0"
-  
 script:
-  - ./gradlew build jacocoTestReport assembleAndroidTest
-  - android list targets
-  - echo no | android create avd --force -n test --target $ANDROID_TARGET --abi $ANDROID_ABI
-  - emulator -avd test -no-skin -no-window &
-  - android-wait-for-emulator
-  - adb shell setprop dalvik.vm.dexopt-flags v=n,o=v
-  - ./gradlew connectedCheck
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - chmod +x gradlew
