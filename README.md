@@ -1,6 +1,6 @@
 <h1 align=center> Server Diagnostic Application </h1> 
 
-<p align=center> An application for diagnosing IP Addresses and URLs, converting JSON files to string using OkHttp. Made with Kotlin. :heart: </p>   
+<p align=center> An application for diagnosing URLs, converting JSON files to string using OkHttp. Made with Kotlin. :heart: </p>   
 
 <p align=center>
   <a href="https://travis-ci.org/mmstewart/Server-Diagnostic-Application">
