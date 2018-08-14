@@ -71,7 +71,7 @@ Screenshots will be updated when there are changes to the design.
 
 ## Author
 
-* **Marcus Stewart** - *Initial work* - [MMStewart](https://github.com/mmstewart)
+* **Marcus Stewart** - [MMStewart](https://github.com/mmstewart)
 
 ## Acknowledgments
 
