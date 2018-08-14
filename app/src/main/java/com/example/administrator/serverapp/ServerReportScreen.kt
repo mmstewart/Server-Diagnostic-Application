@@ -66,7 +66,7 @@ then have a line where the user can enter their ip address and submit using the 
             //Progress Bar is disabled until correct URL
             progressBar.visibility = View.INVISIBLE
 
-            textResult!!.text = "Waiting for response..."
+            textResult!!.text = "Waiting for request..."
 
             if (urlInput!!.text.toString().isEmpty()) {
 
@@ -79,25 +79,19 @@ then have a line where the user can enter their ip address and submit using the 
 
             } else if (!Patterns.WEB_URL.matcher(urlInput!!.text.toString().toLowerCase(Locale.US)).matches()) {
                 textResult!!.error = ""
-                textResult!!.text = "Invalid URL  "
+                textResult!!.text = "Invalid URL, try again  "
             } else if (urlInput!!.text.toString().startsWith("https://")) {
                 textResult!!.error = ""
-                textResult!!.text = "Invalid URL, Remove https://  "
+                textResult!!.text = "Invalid URL, remove https:// and try again  "
             } else if (urlInput!!.text.toString().startsWith("http://")) {
                 textResult!!.error = ""
-                textResult!!.text = "Invalid URL, Remove http://  "
-            } else if (urlInput!!.text.toString().startsWith(".")) {
-                textResult!!.error = ""
-                textResult!!.text = "Invalid URL, Remove .  "
+                textResult!!.text = "Invalid URL, remove http:// and try again  "
             } else if (urlInput!!.text.toString().startsWith("w.")) {
                 textResult!!.error = ""
-                textResult!!.text = "Invalid URL, Remove w.  "
+                textResult!!.text = "Invalid URL, remove w. and try again  "
             } else if (urlInput!!.text.toString().startsWith("ww.")) {
                 textResult!!.error = ""
-                textResult!!.text = "Invalid URL, Remove ww.  "
-            } else if (urlInput!!.text.toString().startsWith("www.")) {
-                textResult!!.error = ""
-                textResult!!.text = "Invalid URL, Remove www.  "
+                textResult!!.text = "Invalid URL, remove ww. and try again  "
             } else {
                 thread {
                     kotlin.run {
