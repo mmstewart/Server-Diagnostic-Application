@@ -66,7 +66,7 @@ then have a line where the user can enter their ip address and submit using the 
             //Progress Bar is disabled until correct URL
             progressBar.visibility = View.INVISIBLE
 
-            textResult!!.text = "Waiting for request..."
+            textResult!!.text = "Waiting for GET Request..."
 
             if (urlInput!!.text.toString().isEmpty()) {
 
@@ -147,7 +147,7 @@ then have a line where the user can enter their ip address and submit using the 
 
         //Clear Button
         button2!!.setOnClickListener {
-            textResult!!.text = "Results Appear Here"
+            textResult!!.text = "JSON From Server"
             textResult!!.error = null
             urlInput!!.text.clear()
             user!!.text.clear()
