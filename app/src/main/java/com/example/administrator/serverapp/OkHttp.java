@@ -2,13 +2,14 @@ package com.example.administrator.serverapp;
 
 import java.io.IOException;
 import java.net.ConnectException;
+import java.net.NoRouteToHostException;
 import java.net.SocketTimeoutException;
+import java.net.UnknownHostException;
 
-import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLHandshakeException;
-import javax.net.ssl.SSLSession;
 
 import okhttp3.Call;
+import okhttp3.CertificatePinner;
 import okhttp3.Credentials;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -21,15 +22,12 @@ public class OkHttp {
 
         String result;
         OkHttpClient client = new OkHttpClient();
-        OkHttpClient.Builder builder = new OkHttpClient.Builder();
 
-        builder.hostnameVerifier(new HostnameVerifier() {
-            @Override
-            public boolean verify(String s, SSLSession sslSession) {
-                return true;
-            }
-        });
-        client.hostnameVerifier();
+        CertificatePinner cp = new CertificatePinner.Builder()
+                .build();
+        OkHttpClient b = client.newBuilder()
+                .certificatePinner(cp)
+                .build();
 
         Request request = new Request.Builder()
                 .url("https://" + url)
@@ -40,10 +38,22 @@ public class OkHttp {
         Call call = client.newCall(request);
         try {
             Response response = call.execute();
+            b.newCall(request).execute();
             result = response.body().string();
-        } catch (ConnectException | SocketTimeoutException | SSLHandshakeException | StreamResetException e) {
-            return "Failed to connect to https://" + url + ", try again.";
+        } catch (ConnectException e) {
+            return url + " can't be reached";
+        } catch (NoRouteToHostException e) {
+            return "No route to " + url;
+        } catch (SocketTimeoutException e) {
+            return url + " timed out";
+        } catch (StreamResetException e) {
+            return url + " had a " + String.valueOf(e.errorCode);
+        } catch (SSLHandshakeException e) {
+            return url + "'s connection has been closed";
+        } catch (UnknownHostException e) {
+            return "Unable to resolve host " + url;
         }
         return result;
     }
+
 }
