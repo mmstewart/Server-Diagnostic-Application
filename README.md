@@ -9,6 +9,11 @@
       src="https://travis-ci.org/mmstewart/Server-Diagnostic-Application.svg?branch=master"
     />
   </a>
+  <a href="https://android-arsenal.com/api?level=23">
+    <img src="https://img.shields.io/badge/API-23%2B-brightgreen.svg?style=flat" 
+         border="0" 
+         alt="API">
+  </a>
     <a href="./LICENSE">
     <img
       alt="license:mit"
