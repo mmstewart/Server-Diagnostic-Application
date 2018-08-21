@@ -6,7 +6,9 @@ import java.net.NoRouteToHostException;
 import java.net.SocketTimeoutException;
 import java.net.UnknownHostException;
 
+import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLHandshakeException;
+import javax.net.ssl.SSLSession;
 
 import okhttp3.Call;
 import okhttp3.CertificatePinner;
@@ -27,7 +29,15 @@ public class OkHttp {
                 .build();
         OkHttpClient b = client.newBuilder()
                 .certificatePinner(cp)
-                .build();
+                .hostnameVerifier(new HostnameVerifier() {
+                    @Override
+                    public boolean verify(String hostname, SSLSession session) {
+                        return true;
+                    }
+                }).build();
+        client.certificatePinner();
+        b.certificatePinner();
+        client.hostnameVerifier();
 
         Request request = new Request.Builder()
                 .url("https://" + url)
