@@ -80,6 +80,6 @@ Screenshots will be updated when there are changes to the design.
 
 ## License
 
-Copyright (c) 2018<!--- -(Future Years) --> Marcus Stewart, see Git history
+Copyright (c) 2019<!--- -(Future Years) --> Marcus Stewart, see Git history
 
 MIT licensed, see [LICENSE](LICENSE) file.
